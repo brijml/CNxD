@@ -9,7 +9,7 @@
 
 import numpy as np
 #import numba
-from Util import *
+from .Util import *
 #import time
 
 LOG_ZERO = -np.inf

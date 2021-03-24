@@ -8,9 +8,9 @@ Define the Chow_liu Tree class
 from __future__ import print_function
 import numpy as np
 
-from Util import *
+from .Util import *
 
-import utilM
+from . import utilM
 
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import minimum_spanning_tree
@@ -225,7 +225,7 @@ class CLT:
     def get_tree_path(self):
         
         self.tree_path.append([0])
-        for i in xrange(1,self.nvariables):
+        for i in range(1,self.nvariables):
             single_path = []
             single_path.append(i)
             curr = i
@@ -250,7 +250,7 @@ class CLT:
 
         cond_cpt = np.copy(self.cond_cpt)
         
-        for i in xrange (len(evid_list)):
+        for i in range(len(evid_list)):
             variable_id = evid_list[i][0]
             value = evid_list[i][1]
             

@@ -195,7 +195,7 @@ class Util(object):
         sum_xy += p_xy[:,:,1,1]*np.log(np.einsum('ij,i,j->ij',p_xy[:,:,1,1],p_x_r[:,1],p_x_r[:,1]))
         if timing:
             print(time.time() - start)
-            print sum_xy
+            print(sum_xy)
 
         return sum_xy
     
@@ -214,7 +214,7 @@ class Util(object):
         sum_xy += p_xy[:,:,1,1]*np.log(np.einsum('ij,i,j->ij',p_xy[:,:,1,1],p_x_r[:,1],p_x_r[:,1]))
         if timing:
             print(time.time() - start)
-            print sum_xy
+            print(sum_xy)
 
         return sum_xy
     
@@ -234,7 +234,7 @@ class Util(object):
         
 
         
-        for i in xrange(1, nvariables):
+        for i in range(1, nvariables):
             x = topo_order[i]
             y = parents[x]
             
@@ -279,7 +279,7 @@ class Util(object):
         
 
         
-        for x in xrange(1, nvariables):
+        for x in range(1, nvariables):
             y = parents[x]
             
      
